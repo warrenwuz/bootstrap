@@ -10,4 +10,10 @@ public interface CompactDisc {
 	 * play
 	 */
 	void play();
+
+	/**
+	 * 播放磁道
+	 * @param trackNumber
+	 */
+	void playTrack(int trackNumber);
 }
