@@ -9,4 +9,8 @@ public interface Performance {
 	 * preform
 	 */
 	void preform();
+	/**
+	 * eat
+	 */
+	void eat();
 }

@@ -25,4 +25,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 	public void testAudience() {
 	  actor.preform();
 	}
+	@Test
+	public void testEat() {
+	  actor.eat();
+	}
 }

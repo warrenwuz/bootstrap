@@ -9,6 +9,11 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class Actor implements Performance {
 	@Override
+	public void eat() {
+		log.info("eat start");
+	}
+
+	@Override
 	public void preform() {
 		log.info("preform start");
 	}

@@ -16,6 +16,11 @@ public class Audience {
 	public void performance() {
 	}
 
+	@Pointcut("execution(* com.warren.bootstrap.aop.Performance.eat(..))")
+	public void eat(){
+
+	}
+
 	/**
 	 * 表演之前
 	 */
@@ -47,8 +52,12 @@ public class Audience {
 	public void demandRefund() {
 		log.info("Demanding a refund");
 	}
-	///
-	/*@Around("performance()")
+
+	/**
+	 * 环绕通知
+	 * @param joinPoint
+	 */
+	@Around("eat()")
 	public void watchPerformance(ProceedingJoinPoint joinPoint){
 		try {
 			log.info("Silencing cell phones");
@@ -59,5 +68,5 @@ public class Audience {
 		} catch (Throwable throwable) {
 			log.info("Demanding a refund");
 		}
-	}*/
+	}
 }
