@@ -15,11 +15,11 @@ import javax.sql.DataSource;
  */
 @Configuration
 public class DataSourceConfig {
-	@Bean
+	/*@Bean
 	@Profile("dev")
 	public DataSource embeddedDataSource() {
 		return new EmbeddedDatabaseBuilder().setType(EmbeddedDatabaseType.H2).addScript("classpath:schema.sql").addScript("classpath:test-data.sql").build();
-	}
+	}*/
 	@Bean
 	@Profile("prod")
 	public DataSource jndiDataSource(){

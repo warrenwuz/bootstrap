@@ -7,6 +7,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
  * {@link javax.servlet.ServletContainerInitializer} 代替web.xml
  * {@link javax.servlet.annotation.HandlesTypes} 在 {@link org.springframework.web.SpringServletContainerInitializer}中
  * 注解了{@link org.springframework.web.WebApplicationInitializer}
+ * AbstractAnnotationConfigDispatcherServletInitializer 继承 {@link org.springframework.web.WebApplicationInitializer}
  * @author wuzhe1159@163.com
  * @date 2018/11/11 10:29
  */

@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date
  * @since jdk11
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.warren.bootstrap.spittr")
 public class BootstrapApplication {
 
     public static void main(String[] args) {
